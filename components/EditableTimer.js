@@ -6,7 +6,7 @@ import Timer from './Timer';
 
 export default class EditableTimer extends React.Component{
   static propTypes = {
-    // id: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     project: PropTypes.string.isRequired,
     elapsed: PropTypes.number.isRequired,
@@ -47,7 +47,7 @@ export default class EditableTimer extends React.Component{
 
   render(){
     const { 
-      // id, 
+      id, 
       title, 
       project, 
       elapsed, 
@@ -71,7 +71,7 @@ export default class EditableTimer extends React.Component{
     
     return(
       <Timer
-        // id={id}
+        id={id}
         title={title}
         project={project}
         elapsed={elapsed}
